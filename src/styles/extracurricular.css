@@ -1,0 +1,88 @@
+.extracurricular {
+    width: 25%;
+    background-color: var(--black);
+    height: calc(100vh - 50px);
+}
+
+.extracurricular .title,
+.extracurricular .container {
+    color: var(--yellow);
+}
+
+.extracurricular .container {
+    width: 80vw;
+    overflow: auto;
+    height: calc(94vh - 170px);
+    margin-top: 30px;
+    padding: 0;
+    display: block;
+}
+
+.extracurricular table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.extracurricular img {
+    width: 80%;
+    filter: drop-shadow(2px 2px 3px var(--black));
+}
+
+.extracurricular thead,
+.extracurricular tr,
+.extracurricular td {
+    margin: 0;
+    text-align: center;
+}
+
+.extracurricular th {
+    background-color: var(--yellow);
+    color: var(--black);
+    height: calc((94vh - 160px) / 8);
+}
+
+.extracurricular td {
+    height: 8vw;
+}
+
+.extracurricular tr:nth-child(odd) {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.extracurricular tr:nth-child(even) {
+    background-color: var(--gray);
+    color: var(--black);
+}
+
+.extracurricular th:first-child,
+.extracurricular td:first-child {
+    width: 10%;
+}
+
+.extracurricular th:nth-child(2),
+.extracurricular td:nth-child(2) {
+    width: 20%;
+}
+
+.extracurricular th:nth-child(3),
+.extracurricular td:nth-child(3) {
+    width: 10%;
+}
+
+.extracurricular th:nth-child(4),
+.extracurricular td:nth-child(4) {
+    width: 40%;
+}
+
+.extracurricular th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .extracurricular table {
+        width: calc(80vw / 0.3);
+    }
+}

@@ -1,0 +1,110 @@
+.education {
+    width: 25%;
+    background-color: var(--yellow);
+    height: calc(100vh - 50px);
+}
+
+.education .title, .education .container {
+    color: var(--black);
+}
+
+.education .container {
+    width: 85%;
+    gap: 5%;
+    height: calc(94vh - 140px);
+}
+
+.school {
+    background-color: var(--white);
+    width: calc(50% - 30px);
+    padding: 15px;
+    border-radius: 15px;
+    height: calc(64vh - 30px);
+}
+
+.school .info {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+}
+
+.school img {
+    height: 100%;
+}
+
+.school h1 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 3vh;
+}
+
+.school h2 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 2.5vh;
+    font-weight: 200;
+}
+
+.school ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 2.5vh;
+    font-weight: 200;
+    list-style-type: "- ";
+}
+
+.school li {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .education .container {
+        flex-direction: column;
+        gap: 2.5%;
+    }
+
+    .school {
+        width: calc(100% - 30px);
+        height: calc(50% - 30px);
+        gap: 5%;
+    }
+
+    .school .info {
+        height: 35%;
+    }
+
+    .school img {
+        height: 100%;
+    }
+
+    .school h1 {
+        font-size: 2.7vh;
+    }
+
+    .school h2, .school ul {
+        font-size: 2vh;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .school .info {
+        height: 45%;
+    }
+
+    .school img {
+        height: 80%;
+    }
+
+    .school h1 {
+        font-size: 2vh;
+    }
+
+    .school h2, .school ul {
+        font-size: 1.5vh;
+    }
+}
