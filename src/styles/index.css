@@ -51,7 +51,7 @@ code {
 }
 
 .content {
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     gap: 5px;
